@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Algorithmic Eve: Gender Breakout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@75..112.5,400..900&display=swap" rel="stylesheet" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- logo top-left -->
+  <div id="logoContainer">
+    <img id="logo" src="images/logo.png" alt="Logo" />
+  </div>
+
+  <!-- fixed, neon-gradient title bar -->
+  <header id="title">
+    <span class="white">ALGO</span>RITHMIC EVE: <span>GENDER BREAKOUT</span>
+  </header>
+
+  <!-- left-hand tile index -->
+  <nav id="sidebar"><ul></ul></nav>
+
+  <!-- floating help button (always on top) -->
+  <button id="helpBtn">?</button>
+
+  <!-- modal window -->
+  <div id="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>How to Play</h2>
+      <p>
+        Follow the number rolled on the dice, then click the corresponding number on the left-hand index page to view the current event.
+Draw the appropriate type of card based on the instructions shown.
+      </p>
+    </div>
+  </div>
+
+  <!-- main image rail -->
+  <main id="content"></main>
+
+  <!-- music button & audio -->
+  <button id="musicBtn">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="audio/bg-music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- script -->
+  <script src="script.js"></script>
+</body>
+</html>
